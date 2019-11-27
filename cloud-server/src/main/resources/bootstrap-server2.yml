@@ -1,0 +1,10 @@
+server:
+  port: 8904
+spring:
+  profiles: server2
+eureka:
+  instance:
+    hostname: server2
+  client:
+    service-url:
+      defaultZone: http://server1:8902/eureka/
